@@ -1,3 +1,5 @@
+from exceptiongroup import catch
+
 from jb_60.project_nike.pages import cart_page
 from jb_60.project_nike.pages.cart_page import cartPage
 from jb_60.project_nike.pages.product_page import productPage
@@ -23,5 +25,5 @@ class TestProduct():
 
         available_size.locator('label').click()
 
-        add_to_bag_button = page.locator('button[data-testid="add-to-cart-button"]')
+        add_to_bag_button = page.locator('button[data-testid="atb-button"]')
         add_to_bag_button.click()
