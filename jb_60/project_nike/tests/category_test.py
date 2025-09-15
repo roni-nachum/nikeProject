@@ -14,4 +14,5 @@ class TestCategory():
         value = search_page.get_amount()
         assert value > 1, 'the value is less than 1'
         print(f'found {value} items on sale')
+        # In this category_test, it clicks the Add to bag button and shows that the test passed, but there’s a bug — it doesn’t actually add the item to the cart.
 
